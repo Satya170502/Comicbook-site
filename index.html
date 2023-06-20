@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ::-webkit-scrollbar{
+            width:10px;
+            
+        }
+        ::-webkit-scrollbar-thumb{
+          background:linear-gradient(transparent,red);
+            
+            border-radius:6px;
+            transition: 0.15s ;
+            
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background:linear-gradient(transparent,rgb(255, 166, 2));
+            
+        }
+        .hidden{
+          opacity: 0;
+          filter: blur(5px);
+          transform: translateX(-100%);
+          transition: all 1s;
+         }
+       
+         .show{
+          opacity: 1;
+          filter: blur(0);
+          transform: translateX(0);
+        }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/ghost.css">
+    
+    
+<link rel="stylesheet" media="all" href="https://assets.terror-town.com/assets/stories-e10453f6862aafc64a3026d94b654589c79782ebb5f38ebef98702918cc9e17d.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whistle-horror comic</title>
+</head>
+<body   style="background-color:black; ">
+    
+  
+   
+    <section class="videosection">
+        
+        <div class="background-video">
+            
+            <video autoplay="" muted="" loop="">
+                
+                <source src="Media/141158 (Original).mp4" type="video/mp4">
+                
+                
+            </video>
+        </div>
+        <div class="landing-video-content">
+            <div  class="video-landing-content">
+               
+                <h1>
+                      Whistle
+                  
+                </h1>
+                <p class="text-center">
+                   Be careful, someone is always listening! !
+                </p>
+                <div  class="musicOn">
+                    <audio id="audio" style="display:none;" src="Media/audio-1.mp3" controls  loop onloadeddata="setHalfVolume()">
+                  </div>
+                  <div style="margin-top: -470px;margin-left:-630px;position:absolute;cursor:pointer;" class="container">
+                    <h1 class="title"><img title='Music Playing' alt='Play The Music' src='Media/icons8-sound-48.png' /></h1>
+              </div>
+             
+
+              
+        </div>
+    </section>
+    <div style="margin-top: 250px;margin-left:20px;"  class="w3-content w3-container w3-padding-64" id="about">
+        <p style="color: white;    font-family: 'Creepster';font-size:30px;margin-left:80px; animation-duration: 1.75s;
+        animation-iteration-count: infinite;
+        animation-name: flickering;
+        animation-timing-function: step-start;
+        overflow:hidden;">
+          You should always be careful of your surroundings.
+          There are entities around you that are always listening.
+        </p>
+        <p style="color: white;    font-family: 'Creepster';font-size:30px;margin-left:200px; animation-duration: 1.75s;
+        animation-iteration-count: infinite;
+        animation-name: flickering;
+        animation-timing-function: step-start;
+        overflow:hidden;">
+            Who knows you can annoy an entity by something which you could'nt even think of!?
+        </p>
+      </div>
+      <div  id="ghost-container" >
+        <div id="spooky">
+            <div id="body">
+                <div id="eyes"></div>
+                <div id="mouth"></div>
+                <div id="feet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="shadow"></div>
+    </div>
+      
+      <div   id="container">
+        <div id="container2">
+            
+          <div style="margin-left:130px;" class="box">
+            
+            <div class="hidden">
+            <img class="img"src="Media/comic-1.png">
+          </div>
+        </div>
+          <div style="margin-left: 830px;margin-top:-450px;" class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-2.png"/>
+          </div></div>
+          <div  style="margin-left: 130px;margin-top:-250px" class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-3.png"/>
+          </div></div>
+          <div style="margin-left: 830px;margin-top:-450px" class="box">
+            <div class="hidden">
+            <img class="img"src="Media/comic-4.png"/>
+          </div></div>
+          <div style="margin-left: 130px;margin-top:-250px"  class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-5.png"/>
+          </div></div>
+          <div style="margin-left: 830px;margin-top:-450px"  class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-6.png"/>
+          </div></div>
+          <div style="margin-left: 130px;margin-top:-250px" class="box">
+            <div class="hidden">
+            <img class="img"src="Media/comic-7.png"/>
+          </div></div>
+          <div style="margin-left: 830px;margin-top:-450px" class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-8.png"/>
+          </div></div>
+          <div style="margin-left: 130px;margin-top:-250px" class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-9.png"/>
+          </div></div>
+          
+            <div style="margin-left: 830px;margin-top:-450px" class="box">
+            <div class="hidden">
+            <img class="img"src="Media/comic-10.png"/>
+          </div></div>
+          <div style="margin-left: 130px;margin-top:-250px"  class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-11.png"/>
+          </div></div>
+          <div style="margin-left: 830px;margin-top:-450px"  class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-12.png"/>
+          </div></div>
+          <div style="margin-left: 130px;margin-top:-250px"  class="box">
+            <div class="hidden">
+            <img class="img"src="Media/comic-13.png"/>
+          </div></div>
+          <div style="margin-left: 830px;margin-top:-450px" class="box">
+            <div class="hidden">
+            <img class="img" src="Media/comic-14.png"/>
+          </div></div>
+         
+          <a style="margin-left:700px ; margin-top:50px;font-family: 'Creepster';text-decoration:none;font-size:50px;" id="home-button" href="#">Home</a>
+          
+        </div>
+       </div>
+      
+
+    
+      <script src="./index.js"></script>
+</body>
+</html>
